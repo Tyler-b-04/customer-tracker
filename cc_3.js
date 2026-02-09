@@ -19,3 +19,12 @@ let customers = [
 console.log("~~~ New Customer List ~~~")
 console.log(customers);
 
+customers.push({
+    name: "Connor Garry"
+    email: "big_cg@gmail.com"
+    purchases: "RGB Keyboard"
+});
+console.log("\nAdded new customer (push): Connor Garry");
+
+let removedCustomer = customers.shift();
+console.log(`Removed first customer (shift): ${removedCustomer.name}`);
