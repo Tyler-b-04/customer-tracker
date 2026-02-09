@@ -43,4 +43,9 @@ customers.forEach((c) => {
 });
 console.log("Added purchase for Tyler Brem: Wireless Mouse");
 
-
+console.log("\n~~~ Customer Report ~~~");
+customers.forEach((c) => {
+  console.log(
+    `${c.name} | ${c.email} | Total Purchases: ${c.purchases.length}`
+  );
+});
